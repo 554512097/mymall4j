@@ -1,0 +1,34 @@
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+allprojects {
+    repositories {
+        maven { url "https://maven.aliyun.com/repository/central" }
+        mavenCentral()
+    }
+}
+
+ext {
+    javaVersion = '1.8'
+    poiVerion = '5.0.0'
+    log4jVersion = '2.17.1'
+
+    redisson = 'org.redisson:redisson-spring-boot-starter:3.12.5'
+    guava = 'com.google.guava:guava:28.2-jre'
+    hutool = 'cn.hutool:hutool-all:5.7.15'
+    jsoup = 'org.jsoup:jsoup:1.11.3'
+    mybatisPlus = 'com.baomidou:mybatis-plus-boot-starter:3.5.1'
+    qiniu = 'com.qiniu:qiniu-java-sdk:7.2.18'
+    orika = 'ma.glasnost.orika:orika-core:1.5.4'
+    swagger2 = 'io.springfox:springfox-swagger2:2.9.2'
+    swaggerUI = 'io.springfox:springfox-swagger-ui:2.9.2'
+    swaggerBootstrapUI = 'com.github.xiaoymin:swagger-bootstrap-ui:1.9.6'
+    aliyunCore = 'com.aliyun:aliyun-java-sdk-core:4.3.9'
+    aliyunDysmsapi = 'com.aliyun:aliyun-java-sdk-dysmsapi:1.1.0'
+    emoji = 'com.vdurmont:emoji-java:4.0.0'
+    kryo = 'com.esotericsoftware:kryo:4.0.2'
+    weixinPay = 'com.github.binarywang:weixin-java-pay:3.5.0'
+    weixinMiniApp = 'com.github.binarywang:weixin-java-miniapp:3.5.0'
+    weixinMp = 'com.github.binarywang:weixin-java-mp:3.5.0'
+    transmittableThreadLocal = 'com.alibaba:transmittable-thread-local:2.12.1'
+}

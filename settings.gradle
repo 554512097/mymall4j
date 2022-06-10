@@ -1,0 +1,3 @@
+rootProject.name = 'mymall4j'
+
+include ':shop_simple'

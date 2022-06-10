@@ -1,0 +1,32 @@
+plugins {
+    id 'org.springframework.boot' version '2.3.12.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+dependencies {
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    implementation 'mysql:mysql-connector-java'
+    implementation rootProject.mybatisPlus
+    implementation rootProject.swagger2
+    implementation rootProject.swaggerUI
+    implementation rootProject.hutool
+    implementation rootProject.redisson
+    implementation rootProject.kryo
+    implementation rootProject.transmittableThreadLocal
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
